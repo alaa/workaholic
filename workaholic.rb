@@ -20,11 +20,11 @@ class Workaholic
 
   def scan
     # Get all child processes of the desired parent process.
-    pids = %x(ps -o pid,etime --ppid=`pidof -s #{proccess}` --sort=etime | awk '{print $1,$2}' | tr '-' ' ' | awk '{print $1,$3}' | egrep '^[0-9]' | grep ':')
+    pids = %x(ps -o pid,etime --ppid=`pidof -s #{@proccess}` --sort=etime | awk '{print $1,$2}' | tr '-' ' ' | awk '{print $1,$3}' | egrep '^[0-9]' | grep ':')
     workaholics = {}
     pids.each_line do |proccess|
       pid, etime = proccess.split
-      workaholics[pid.to_sym] = etime_to_i etime if (etime_to_i etime) > limit
+      workaholics[pid.to_sym] = etime_to_i etime if (etime_to_i etime) > @limit
     end
     workaholics
   end
