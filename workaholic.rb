@@ -2,6 +2,17 @@
 require 'time'
 
 class Workaholic
+  # Find long running cron jobs.
+  #
+  # Example:
+  #   >> require 'workaholic'
+  #   >> workers = Workaholic.new 'cron', 300
+  #   >> workers.scan
+  #   => => {:"4389"=>71983, :"4335"=>71994}
+  #
+  # Arguments:
+  #   proccess: (String)
+  #   limit: (Int)
   attr_accessor :proccess, :limit
 
   def initialize proccess, limit
@@ -25,4 +36,3 @@ class Workaholic
     (h.to_i * 60 * 60) + (m.to_i * 60) + (s.to_i) 
   end
 end
-
