@@ -10,7 +10,7 @@ more than 5 minutes.
 
   `gem install workaholic`
 
-  `workers = Workahloic.new 'cron', 300`
+  `workers = Workaholic.new 'cron', 300`
 
   `workers.scan`
 
