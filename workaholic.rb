@@ -6,7 +6,7 @@ class Workaholic
   #   >> require 'workaholic'
   #   >> workers = Workaholic.new 'cron', 300
   #   >> workers.scan
-  #   => => {:"4389"=>71983, :"4335"=>71994}
+  #   => {:"4389"=>71983, :"4335"=>71994}
   #
   # Arguments:
   #   proccess: (String)

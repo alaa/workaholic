@@ -8,7 +8,9 @@ Ruby Gem to find long running child processes like cron jobs.
 Install workaholic and look for cron jobs that have been running for
 more than 5 minutes.
 
-  `gem install workaholic`
+  `gem install workaholic-cron`
+
+  `require 'workaholic'`
 
   `workers = Workaholic.new 'cron', 300`
 
