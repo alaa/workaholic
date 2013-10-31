@@ -1,6 +1,8 @@
 ### Workaholic
 ==========
-Ruby Gem to find long running child processes like cron jobs.
+Ruby Gem to find long running child processes like cron jobs. 
+Workaholic is useful to be integrated in monitoring and alerting systems for
+monitoring background jobs.
 
 ### Usage
 
