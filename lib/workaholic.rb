@@ -1,4 +1,3 @@
-#!/bin/ruby
 class Workaholic
   # Find long running cron jobs.
   #
