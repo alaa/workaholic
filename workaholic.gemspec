@@ -9,6 +9,6 @@ Gem::Specification.new do |s|
   s.email       = 'alaa.qutaish@gmail.com'
   s.files       = ["lib/workaholic.rb"]
   s.homepage    =
-    'http://rubygems.org/gems/workaholic'
+    'http://rubygems.org/gems/workaholic-cron'
   s.license       = 'MIT'
 end
